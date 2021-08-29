@@ -2,40 +2,67 @@
 
 const theform = document.querySelector('.form');
 
-const goodanswers = ["a","b","b"];
-
-theform.addEventListener('submit',(e)=>{
+//loading question and good answers form json file
 
 
-    e.preventDefault();
 
-    console.log("on est la");
+const loaddata = () =>{
 
-    let answers = [];
+    let goodanswers = [];
+        fetch('/data/test1.json')
+        .then(result=>result.json())
+        .then(data=>{
 
-    
+            console.log(data);
+            goodanswers = data[0].answers.split(",");
+            console.log('goodanswers', goodanswers);
 
-    for(i=1;i<4;i++){
+        })
+        .catch(err=>{
 
-        let answer = document.querySelector(`input[name = "q${i}"]:checked`).value;
-
-        answers.push(answer);
-
-    }
-
-    
-
-    // on doit checker les bonnes et mauvaises reponse en comprant avec array qui contient les bons resultats
-
-    checkResults(answers);
+            console.log("data not retrieved");
+        })
 
 
-});
+        theform.addEventListener('submit',(e)=>{
+
+
+            e.preventDefault();
+
+            console.log("on est la");
+
+            let answers = [];
+
+            
+
+            for(i=1;i<4;i++){
+
+                let answer = document.querySelector(`input[name = "q${i}"]:checked`).value;
+
+                answers.push(answer);
+
+            }
+
+            
+
+            // on doit checker les bonnes et mauvaises reponse en comprant avec array qui contient les bons resultats
+
+            checkResults(answers,goodanswers);
+
+
+        });
+
+};
+
+loaddata();
+
+
+
 
 
 
 // on check les resultats et on donne une couleur au block en fonction de celui ci
-function checkResults (reponses){
+function checkResults (reponses,goodanswers){
 
 
         reponses.forEach((element,index) => {
@@ -46,6 +73,8 @@ function checkResults (reponses){
 
             // on reset les success et erreurs
             blocdequestion.classList.remove('success','error');
+
+            console.log('letruc',goodanswers[index]);
             
             if(goodanswers[index] === element){
 
