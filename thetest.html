@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+                <ul class='navbar-nav text-light '>
+
+                    <li class="navbar-item pr-5 ">home</li>
+                    <li class="navbar-item  pr-5">home</li>
+                    <li class="navbar-item ">home</li>
+
+                </ul>
+
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section class="container-fluid">
+
+        <div class=jumbotron>
+
+            <h5 class="text-center">Basic HTML 5 </h5>
+
+            <img class="mx-auto d-block" src="/images/html5.png" width="50px" alt="">
+
+
+
+            <!-- <img src="/images/html5.png" alt="" width="100px">
+            <img src="/images/css-3.png" alt="" width="100px"> -->
+
+
+
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <section class="lequizz container-fluid">
+
+        <form action="" class="form">
+            <div class="card mb-3 mt-4 q1">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <h5 class="p-3">what is the meaning of html ?</h5>
+                    </div>
+                    <div class="col-md-8">
+
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" value="a" id="hypertext">
+                            <label class="form-check-label" for="hypertext">
+                                hypertext markup language
+                            </label>
+                        </div>
+                        <div class="form-check mt-2">
+                            <input class="form-check-input" type="radio" name="q1" value="b" id="multilanguage"
+                                checked>
+                            <label class="form-check-label" for="multilanguage">
+                                hyper text multi language
+                            </label>
+                        </div>
+                        <div class="form-check mt-2">
+                            <input class="form-check-input" type="radio" name="q1" value="c" id="hugetemplate"
+                                >
+                            <label class="form-check-label" for="hugetemplate">
+                                huge template main link
+                            </label>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 mt-4 q2">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <h5 class="p-3">Who is making the Web standards?</h5>
+                    </div>
+                    <div class="col-md-8">
+
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2"  value="a" id="google">
+                            <label class="form-check-label" for="google">
+                                Google
+                            </label>
+                        </div>
+                        <div class="form-check mt-2">
+                            <input class="form-check-input" type="radio" name="q2" value="b" id="wwc"
+                                checked>
+                            <label class="form-check-label" for="wwc">
+                                The World Web Consortium
+                            </label>
+                        </div>
+                        <div class="form-check mt-2">
+                            <input class="form-check-input" type="radio" name="q2" value="c" id="microsoft"
+                                >
+                            <label class="form-check-label" for="microsoft">
+                                Microsoft
+                            </label>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 mt-4 q3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <h5 class="p-3">Choose the correct HTML element for the largest heading:</h5>
+                    </div>
+                    <div class="col-md-8">
+
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q3" value="a"  id="h6">
+                            <label class="form-check-label" for="h6">
+                                &lth6&gt;
+                            </label>
+                        </div>
+                        <div class="form-check mt-2">
+                            <input class="form-check-input" type="radio" name="q3" value="b"  id="h1"
+                                checked>
+                            <label class="form-check-label" for="h1">
+                                &lth1&gt;
+                            </label>
+                        </div>
+                        <div class="form-check mt-2">
+                            <input class="form-check-input" type="radio" name="q3" value="c"  id="heading"
+                                >
+                            <label class="form-check-label" for="heading">
+                                &ltheading&gt;
+                            </label>
+                        </div>
+                        <div class="form-check mt-2">
+                            <input class="form-check-input" type="radio" name="q3" value="d"  id="head"
+                                >
+                            <label class="form-check-label" for="head">
+                                &lthead&gt;
+                            </label>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="submitbuttonarea">
+
+                <button type="submit" class="btn-primary rounded">Validez votre Choix</button>
+                <a href="#" class="btn btn-danger ml-5" onclick="pico();">Reset</a>
+            </div>
+        </form>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="/js/quizz.js"></script>
+</body>
+
+</html>

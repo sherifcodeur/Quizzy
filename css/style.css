@@ -1,0 +1,21 @@
+.submitbuttonarea{
+
+
+   
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+
+.success{
+
+    background-color: aquamarine;
+}
+
+
+.error{
+
+    background-color: palevioletred;
+}
