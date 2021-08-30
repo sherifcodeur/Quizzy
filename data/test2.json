@@ -1,0 +1,53 @@
+[{
+
+    "id":"2",
+    "title":"Javascript variables",
+    "level":"easy",
+    "answers":[
+        "a",
+        "b",
+        "d"
+    ],
+    "questions": [
+        {
+          "id": 0,
+          "title": "Maxwell Ramsey",
+          "possibilities":[
+            {
+                "a":"le mec de roger",
+                "b":"la soeur de gerard",
+                "c":"gilberte"
+            }
+
+          ]
+        },
+        {
+            "id": 1,
+            "title": "qui est roumi",
+            "possibilities":[
+              {
+                  "a":"le mec de roger",
+                  "b":"la soeur de gerard",
+                  "c":"gilberte"
+              }
+  
+            ]
+          },
+          {
+            "id": 2,
+            "title": "qui est camillos",
+            "possibilities":[
+              {
+                  "a":"le mec de roger",
+                  "b":"la soeur de gerard",
+                  "c":"gilberte",
+                  "d":"pepita"
+              }
+  
+            ]
+          }
+      ]
+
+
+
+}]
